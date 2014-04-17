@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/score"
+        android:layout_marginTop="64dp"
+        android:textSize="25sp"
+        android:text="Name : " />
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/score"
+        android:layout_below="@+id/congra_text"
+        android:layout_marginTop="60dp"
+        android:textSize="25sp"
+        android:text="Score : " />
+
+    <TextView
+        android:id="@+id/congra_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="39dp"
+        android:textSize="50sp"
+        android:layout_centerInParent="true"
+        android:text="Congratulation" />
+
+    <Button
+        android:id="@+id/continue_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_marginTop="53dp"
+        android:layout_toRightOf="@+id/score"
+        android:onClick="onClick"
+        android:text="Continue" />
+
+</RelativeLayout>
